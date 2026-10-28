@@ -19,7 +19,8 @@ Or run `/add-plugin languals` in chat.
   "mcpServers": {
     "languals": {
       "type": "http",
-      "url": "https://languals.fr/mcp"
+      "url": "https://languals.fr/mcp",
+      "placement": "server"
     }
   }
 }
