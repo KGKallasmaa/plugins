@@ -25,5 +25,18 @@
     "web",
     "mcp"
   ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "SELTZ_API_KEY": {
+        "type": "string",
+        "title": "Seltz API key",
+        "description": "API key from https://console.seltz.ai/api-keys. Sent as Authorization: Bearer <key>."
+      }
+    },
+    "required": [
+      "SELTZ_API_KEY"
+    ]
+  },
   "mcpServers": "./mcp.json"
 }

@@ -19,13 +19,16 @@ Or run `/add-plugin seltz` in chat.
   "mcpServers": {
     "seltz": {
       "type": "http",
-      "url": "https://mcp.seltz.ai/mcp"
+      "url": "https://mcp.seltz.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SELTZ_API_KEY}"
+      }
     }
   }
 }
 ```
 
-Seltz authenticates with an API key sent as `Authorization: Bearer <your-seltz-api-key>`. See the [Seltz MCP docs](https://docs.seltz.ai/integrations/mcp) for how to get a key.
+Seltz authenticates with an API key sent as `Authorization: Bearer ${SELTZ_API_KEY}`. Create one at https://console.seltz.ai/api-keys, then set it when Cursor prompts during install. See the [Seltz MCP docs](https://docs.seltz.ai/integrations/mcp).
 
 ## What agents can do
 
